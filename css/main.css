@@ -383,6 +383,7 @@ body {
     margin: auto;
     border-radius: 20px;
     background-color: white;
+    bottom: 0;
 }
 
 .navbar svg {
