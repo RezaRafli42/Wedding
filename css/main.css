@@ -1,5 +1,10 @@
+html {
+    overflow-x: hidden; 
+}
+
 body {
     background-color: #FCB2A9;
+
 }
 
 .title-section {
@@ -13,7 +18,6 @@ body {
     text-align: center;
     padding-bottom: 60px;
     border-radius: 20px;
-    min-width: 350px;
     max-width: 350px;
 }
 
@@ -218,9 +222,9 @@ body {
     height: 250px;
 }
 
-/* .container {
+.container {
     position: relative;
-} */
+}
 
 .gallery-container {
     padding-top: 30px;
@@ -238,7 +242,7 @@ body {
 .next {
     cursor: pointer;
     position: absolute;
-    top: 40%;
+    top: 50%;
     width: auto;
     padding: 16px;
     margin-top: -50px;
@@ -383,7 +387,6 @@ body {
     margin: auto;
     border-radius: 20px;
     background-color: white;
-    bottom: 0;
 }
 
 .navbar svg {
@@ -400,4 +403,4 @@ body {
     color: blue;
     opacity: 1;
     border-bottom: 3px solid #F38A8A;
-}
+} 
