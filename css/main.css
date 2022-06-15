@@ -1,0 +1,405 @@
+html {
+    overflow-x: hidden; 
+}
+
+body {
+    background-color: #FCB2A9;
+    
+}
+
+.title-section {
+    font-family: 'Brush Script MT';
+    font-size: 40px;
+}
+
+.wrapper {
+    background: linear-gradient(#B0D5C0, #b0d5c0);
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 60px;
+    border-radius: 20px;
+}
+
+.section-hero {
+    background-image: url("../image/hero.png");
+    background-color: #fcb3a979;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: inherit;
+    height: 500px;
+    margin: auto;
+}
+
+.foto-bride {
+    max-width: 350px;
+    height: 500px;
+    z-index: -1;
+}
+
+.nama-hero {
+    padding-top: 120px;
+}
+
+.nama-bride p {
+    font-size: 40px;
+    font-family: 'Brush Script MT';
+}
+
+.section-sambutan {
+    padding: 10px;
+    background: linear-gradient(rgba(0, 0, 0, 0.082), rgba(0, 0, 0, 0.205)), url("../image/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    height: 850px;
+}
+
+.isi-sambutan {
+    margin-top: 60px;
+    font-family: 'Comic Sans MS';
+}
+
+.bismillah {
+    font-size: 20px;
+}
+
+.sambutan {
+    font-size: 15px;
+    text-align: justify center;
+
+}
+
+.nama-mempelai {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.foto-pengantin {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+}
+
+.putra-putri {
+    font-size: 15px;
+}
+
+.nama-ortu {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.section-timeline {
+    background: linear-gradient(rgba(0, 0, 0, 0.205), rgba(0, 0, 0, 0.082)), url("../image/background.png");
+    padding-bottom: 20px;
+}
+
+.kiri {
+    text-align: left;
+    margin-left: 30px;
+    color: white;
+}
+
+.kanan {
+    text-align: right;
+    margin-right: 30px;
+    color: white;
+}
+
+.timeline {
+    position: relative;
+    margin: 50px auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.container-timeline {
+    padding: 10px;
+    position: relative;
+    background-color: inherit;
+    width: 150px;
+}
+
+.container-timeline::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: -34px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+    box-shadow: 2px 3px #888888;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    left: 51%;
+}
+
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+.right::after {
+    left: -16px;
+}
+
+.content {
+    padding: 3px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 3px 5px #88888880;
+    ;
+}
+
+.content h2, p {
+    font-size: 15px;
+}
+
+.section-event {
+    background: linear-gradient(rgba(0, 0, 0, 0.082), rgba(0, 0, 0, 0.205)), url("../image/background.png");
+    padding: 20px;
+    padding-top: 0px;
+}
+
+.event {
+    width: 90%;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.256);
+    box-shadow: 5px 5px 12px #5a5a5a,
+        -5px -5px 12px #ffffff57;
+    margin: 30px auto;
+    padding: 10px;
+}
+
+.section-gallery {
+    background: linear-gradient(rgba(0, 0, 0, 0.205), rgba(0, 0, 0, 0.082)), url("../image/background.png");
+    padding-bottom: 20px;
+}
+
+.mySlides img {
+    vertical-align: middle;
+    height: 250px;
+}
+
+.container {
+    position: relative;
+}
+
+.gallery-container {
+    padding-top: 30px;
+}
+
+.mySlides {
+    display: none;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {}
+
+.numbertext {
+    color: #000000;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+.demo {
+    opacity: 0.4;
+    height: 40px;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+.demo-gallery {
+    margin: auto;
+}
+
+.section-chat {
+    background: linear-gradient(rgba(0, 0, 0, 0.082), rgba(0, 0, 0, 0.205)), url("../image/background.png");
+    margin-bottom: 100px;
+}
+
+.table-chat {
+    height: 500px;
+    width: 90%;
+    border: 2px solid #444;
+    overflow-y: scroll;
+    margin: auto;
+    margin-top: 60px;
+}
+
+
+#chat li {
+    padding: 15px;
+}
+
+#chat h2,
+#chat h3 {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+#chat .message {
+    padding: 10px;
+    color: #fff;
+    line-height: 25px;
+    min-width: 75%;
+    max-width: 300px;
+    display: inline-block;
+    text-align: left justify;
+    border-radius: 20px;
+}
+
+.nama {
+    padding: 0;
+    color: #fff;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+#chat {
+    margin: auto;
+    padding: 0;
+}
+
+#chat .you .message {
+    background-color: #DED9C4;
+}
+
+#chat .triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+}
+
+#chat .you .triangle {
+    border-color: transparent transparent #DED9C4 transparent;
+    margin-left: 47%;
+}
+
+.img-chat {
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+}
+
+/* BOTTOM BAR */
+.navbar {
+    max-width: 350px;
+    margin: auto;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.navbar svg {
+    color: rgb(255, 0, 0);
+    opacity: .5;
+}
+
+.navbar svg:hover {
+    color: rgba(255, 0, 43, 0.87);
+    opacity: 1;
+}
+
+.active {
+    color: blue;
+    opacity: 1;
+    border-bottom: 3px solid #F38A8A;
+}
