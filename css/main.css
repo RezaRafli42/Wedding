@@ -1,10 +1,5 @@
-html {
-    overflow-x: hidden; 
-}
-
 body {
     background-color: #FCB2A9;
-    
 }
 
 .title-section {
@@ -221,9 +216,9 @@ body {
     height: 250px;
 }
 
-.container {
+/* .container {
     position: relative;
-}
+} */
 
 .gallery-container {
     padding-top: 30px;
