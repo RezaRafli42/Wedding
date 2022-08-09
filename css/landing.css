@@ -1,0 +1,9 @@
+body {
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    background-color: wheat;
+    background-image: url("../image/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

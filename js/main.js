@@ -29,17 +29,17 @@ function showSlides(n) {
 }
 
 // CHAT
-var $el = $(".table-chat");
-function anim() {
-  var st = $el.scrollTop();
-  var sb = $el.prop("scrollHeight") - $el.innerHeight();
-  $el.animate({ scrollTop: st < sb / 2 ? sb : 0 }, 5000, anim);
-}
-function stop() {
-  $el.stop();
-}
-anim();
-$el.hover(stop, anim);
+// var $el = $(".table-chat");
+// function anim() {
+//   var st = $el.scrollTop();
+//   var sb = $el.prop("scrollHeight") - $el.innerHeight();
+//   $el.animate({ scrollTop: st < sb / 2 ? sb : 0 }, 5000, anim);
+// }
+// function stop() {
+//   $el.stop();
+// }
+// anim();
+// $el.hover(stop, anim);
 
 // BOTTOM BAR
 $(document).ready(function () {
@@ -78,3 +78,20 @@ $(document).ready(function () {
 
   });
 });
+
+// Music Player
+var button = document.getElementById("button-play");
+var audio = document.getElementById("audio");
+var icon = document.getElementById("icon");
+
+button.addEventListener("click", function(){
+  if(audio.paused){
+    audio.play();
+    document.getElementById("icon").className = "fas fa-pause fa-lg";
+  } else {
+    audio.pause();
+    document.getElementById("icon").className = "fas fa-play fa-lg";
+  }
+});
+
+setTimeout(function() { $("#myPopup").hide(); }, 5000);

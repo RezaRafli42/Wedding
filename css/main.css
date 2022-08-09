@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch&display=swap');
+
 html {
     overflow-x: hidden; 
 }
@@ -8,7 +10,7 @@ body {
 }
 
 .title-section {
-    font-family: 'Brush Script MT';
+    font-family: 'Smooch', cursive;
     font-size: 40px;
 }
 
@@ -44,7 +46,7 @@ body {
 
 .nama-bride p {
     font-size: 40px;
-    font-family: 'Brush Script MT';
+    font-family: 'Smooch', cursive;
 }
 
 .section-sambutan {
@@ -150,17 +152,22 @@ body {
 }
 
 .right {
-    left: 51%;
+    left: 52%;
 }
 
-.left::before {
+.content-kanan{
+    margin-left: 20px;
+    width: 100%;
+}
+
+/* .left::before {
     content: " ";
     height: 0;
     position: absolute;
-    top: 22px;
+    top: 15px;
     width: 0;
     z-index: 1;
-    right: 30px;
+    right: 3px;
     border: medium solid white;
     border-width: 10px 0 10px 10px;
     border-color: transparent transparent transparent white;
@@ -170,14 +177,15 @@ body {
     content: " ";
     height: 0;
     position: absolute;
-    top: 22px;
+    top: 15px;
     width: 0;
     z-index: 1;
-    left: 30px;
+    left: 3px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
     border-color: transparent white transparent transparent;
-}
+    margin-left: 20px;
+} */
 
 .right::after {
     left: -16px;
@@ -189,7 +197,7 @@ body {
     position: relative;
     border-radius: 6px;
     box-shadow: 3px 5px #88888880;
-    ;
+    
 }
 
 .content h2, p {
@@ -220,6 +228,7 @@ body {
 .mySlides img {
     vertical-align: middle;
     height: 250px;
+    border-radius: 20px;
 }
 
 .container {
@@ -278,8 +287,11 @@ body {
 .caption-container {
     text-align: center;
     background-color: #222;
-    padding: 2px 16px;
+    padding: 1px;
     color: white;
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 10px;
 }
 
 .row:after {
@@ -309,14 +321,14 @@ body {
 
 .section-chat {
     background: linear-gradient(rgba(0, 0, 0, 0.082), rgba(0, 0, 0, 0.205)), url("../image/background.png");
-    margin-bottom: 100px;
+    /* margin-bottom: 50px; */
 }
 
 .table-chat {
     height: 500px;
     width: 90%;
     border: 2px solid #444;
-    overflow-y: scroll;
+    overflow-y: auto;
     margin: auto;
     margin-top: 60px;
 }
@@ -404,3 +416,41 @@ body {
     opacity: 1;
     border-bottom: 3px solid #F38A8A;
 } 
+
+.section-map{
+background: linear-gradient(rgba(0, 0, 0, 0.082), rgba(0, 0, 0, 0.205)), url("../image/background.png");
+padding-bottom: 30px;
+}
+
+iframe{
+    padding-top: 100px;
+    width: 95%;
+    height: 500px;
+}
+
+.myButton {
+    margin-top: 20px;
+	box-shadow: 3px 4px 0px 0px #899599;
+	background:linear-gradient(to bottom, #ffbdff 30%, #b8b1b1 100%);
+	background-color:#F38A8A;
+	border-radius:15px;
+	border:1px solid #d6bcd6;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Georgia;
+	font-size:14px;
+	font-style:italic;
+    font-weight: bold;
+	padding:9px 14px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #e1e2ed;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #b8b1b1 5%, #ffbdff 100%);
+    color: black;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}

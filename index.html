@@ -12,12 +12,16 @@
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="css\main.css">
+        <link rel="stylesheet" href="css\music.css">
     </head>
     <body>
+        
         <div class="container">
             <div class="wrapper">
+                
                 <section class="section-hero" id="hero" data-aos="zoom-down"
                     data-aos-duration="1000">
+                    
                     <div class="nama-hero">
                         <div class="nama-bride" data-aos="zoom-up"
                             data-aos-duration="3000">
@@ -31,61 +35,91 @@
                             <p>Nama</p>
                         </div>
                     </div>
-                </section>
+                    <main class="player">
+                        <ul class="buttons">
+                            <!-- <a href="#" class="button-player button-md">
+                                <i class="fas fa-step-backward" aria-hidden="true"></i>
+                                <span class="sr-only">Previous Music</span>
+                            </a> -->
+                            <a id="button-play" class="button-player button-lg">
+                                <i id="icon" class="fas fa-pause fa-lg" aria-hidden="true" aria-hidden="true"></i>
+                                <span class="sr-only">Pause</span>
+                            </a>
+                            <!-- <a href="#" class="button-player button-md">
+                                <i class="fas fa-step-forward"></i>
+                                <span class="sr-only">Next Music</span>
+                            </a> -->
+                        </ul><!--  buttons  -->
+                        <span data-aos="zoom-up"
+                        data-aos-duration="2000" data-aos-delay="1000" class="popuptext" id="myPopup">Anda dapat mematikan lagu</span>
+                    </main>
+                    <audio id="audio" autoplay src="music/Antara Pagi dan Kau.mp3"></audio>
+                    </section>
                 <section class="section-sambutan" id="sambutan">
-                    <div class="isi-sambutan" data-aos="zoom-up" data-aos-duration="2000">
-                    <p class="bismillah">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم</p>
-                    <p class="sambutan">Lorem ipsum dolor sit amet consectetur,
-                        adipisicing elit. Eos aut consectetur dolorem nulla.
-                        Voluptatem cupiditate quae beatae, est, eaque laudantium
-                        asperiores reiciendis dolorem enim accusamus odio non
-                        maxime nulla mollitia!</p>
-                    <div class="pengantin-pria" data-aos="flip-right"
-                        data-aos-duration="2000" data-aos-delay="200">
-                        <p class="nama-mempelai">Nama</p>
-                        <img src="../image/person.png" class="foto-pengantin">
-                        <p class="putra-putri">Putra kedua dari :</p>
-                        <p class="nama-ortu">Bpk. .... &amp; Ibu. ...</p><br>
-                    </div>
-                    <p>Dengan</p><br>
-                    <div class="pengantin-wanita" data-aos="flip-left"
-                        data-aos-duration="2000" data-aos-delay="200">
-                        <p class="nama-mempelai">Nama</p>
-                        <img src="../image/person.png" class="foto-pengantin">
-                        <p class="putra-putri">Putri kedua dari :</p>
-                        <p class="nama-ortu">Bpk. .... &amp; Ibu. ...</p>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Consectetur qui perferendis explicabo obcaecati nisi
-                        incidunt commodi atque</p>
+                    <div class="isi-sambutan" data-aos="zoom-up"
+                        data-aos-duration="2000">
+                        <p class="bismillah">بِسْمِ اللَّهِ الرَّحْمَنِ
+                            الرَّحِيم</p>
+                        <p class="sambutan">Lorem ipsum dolor sit amet
+                            consectetur,
+                            adipisicing elit. Eos aut consectetur dolorem nulla.
+                            Voluptatem cupiditate quae beatae, est, eaque
+                            laudantium
+                            asperiores reiciendis dolorem enim accusamus odio
+                            non
+                            maxime nulla mollitia!</p>
+                        <div class="pengantin-pria" data-aos="flip-right"
+                            data-aos-duration="2000" data-aos-delay="200">
+                            <p class="nama-mempelai">Nama</p>
+                            <img src="../image/person.png"
+                                class="foto-pengantin">
+                            <p class="putra-putri">Putra kedua dari :</p>
+                            <p class="nama-ortu">Bpk. .... &amp; Ibu. ...</p><br>
+                        </div>
+                        <p>Dengan</p><br>
+                        <div class="pengantin-wanita" data-aos="flip-left"
+                            data-aos-duration="2000" data-aos-delay="200">
+                            <p class="nama-mempelai">Nama</p>
+                            <img src="../image/person.png"
+                                class="foto-pengantin">
+                            <p class="putra-putri">Putri kedua dari :</p>
+                            <p class="nama-ortu">Bpk. .... &amp; Ibu. ...</p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                            Consectetur qui perferendis explicabo obcaecati nisi
+                            incidunt commodi atque</p>
                     </div>
                 </section>
                 <section class="section-timeline">
                     <div class="section-title kiri">
-                        <h1 class="title-section" >Timeline</h1>
+                        <h1 class="title-section">Timeline</h1>
                     </div>
-                    <div class="timeline"  data-aos="fade-up"
-                    data-aos-duration="3000">
+                    <div class="timeline">
                         <div class="container-timeline left">
-                            <div class="content">
+                            <div class="content" data-aos="fade-up"
+                                data-aos-duration="3000">
                                 <h2>2017</h2>
                                 <p>Lorem ipsum..</p>
                             </div>
                         </div>
                         <div class="container-timeline right">
-                            <div class="content">
+                            <div class="content" data-aos="fade-up"
+                            data-aos-duration="3000" data-aos-delay="500">
                                 <h2>2018</h2>
                                 <p>Lorem ipsum..</p>
                             </div>
                         </div>
                         <div class="container-timeline left">
-                            <div class="content">
+                            <div class="content" data-aos="fade-up"
+                            data-aos-duration="3000" data-aos-delay="1000">
                                 <h2>2019</h2>
                                 <p>Lorem ipsum..</p>
                             </div>
                         </div>
                         <div class="container-timeline right">
-                            <div class="content">
+                            <div class="content" data-aos="fade-up"
+                            data-aos-duration="3000" data-aos-delay="1500">
                                 <h2>2022</h2>
                                 <p>Lorem ipsum..</p>
                             </div>
@@ -97,11 +131,11 @@
                         <h1 class="title-section">Event</h1>
                     </div>
                     <div class="event" data-aos="fade-up"
-                     data-aos-duration="3000">
+                        data-aos-duration="3000">
                         <p>Tes</p>
                     </div>
                     <div class="event" data-aos="fade-up"
-                    data-aos-duration="3000">
+                        data-aos-duration="3000" data-aos-delay="500">
                         <p>Tes</p>
                     </div>
                 </section>
@@ -110,7 +144,7 @@
                         <h1 class="title-section">Gallery</h1>
                     </div>
                     <div class="container gallery-container" data-aos="fade-up"
-                    data-aos-duration="3000">
+                        data-aos-duration="3000">
                         <div class="mySlides">
                             <div class="numbertext">1 / 6</div>
                             <img src="image/person.png" style="width:100%">
@@ -192,8 +226,8 @@
                     <div class="section-title kanan" id="ucapan">
                         <h1 class="title-section">Ucapan</h1>
                     </div>
-                    <div class="table-chat"  data-aos="fade-in"
-                    data-aos-duration="3000">
+                    <div class="table-chat" data-aos="fade-in"
+                        data-aos-duration="3000">
                         <ul id="chat">
                             <div id="contain">
                                 <table id="table_scroll">
@@ -257,6 +291,12 @@
                         </ul>
                     </div>
                 </section>
+                <section class="section-map">
+                <iframe data-aos="zoom-up"
+                data-aos-duration="2000" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15811.206105283885!2d110.31310612614327!3d-7.810823409943032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7af80f28426fb3%3A0x72412294845ee8b4!2sMuhammadiyah%20University%20of%20Yogyakarta!5e0!3m2!1sen!2sid!4v1660043993067!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <a data-aos="zoom-up"
+                data-aos-duration="2000" data-aos-delay="300" href="#" class="myButton">Take me There!</a>
+            </section>
                 <!-- Bottom Navbar -->
                 <!--Navigation bar-->
                 <div id="nav-placeholder">
@@ -274,5 +314,8 @@
     AOS.init();
   </script>
         <script src="js/main.js"></script>
+        <!-- Script Music Player -->
+        <script src="https://kit.fontawesome.com/7d35781f0a.js" crossorigin="anonymous"></script> 
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     </body>
 </html>
